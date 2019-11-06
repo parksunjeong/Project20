@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	int input1, input2, max, min;
-	printf("µÎ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf_s("%d%d", &input1, &input2);
 	max = (input1 > input2) ? input1 : input2;
 	min = (input1 > input2) ? input2 : input1;
 
-	printf("Å« ¼ö¸¦ ÀÛÀº¼ö·Î ³ª´« ¸òÀº     %d\n", max / min);
-	printf("Å« ¼ö¸¦ ÀÛÀº¼ö·Î ³ª´« ³ª¸ÓÁö´Â %d\n", max % min);
+	printf("í° ìˆ˜ë¥¼ ì‘ì€ìˆ˜ë¡œ ë‚˜ëˆˆ ëª«ì€     %d\n", max / min);
+	printf("í° ìˆ˜ë¥¼ ì‘ì€ìˆ˜ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ëŠ” %d\n", max % min);
 
 	return 0;
 }
